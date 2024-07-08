@@ -120,16 +120,7 @@ export default defineNuxtConfig({
 
   build: {},
 
-  hooks: {
-    "build:manifest": (manifest) => {
-      const css = manifest["node_modules/nuxt/dist/app/entry.js"]?.css;
-      if (css) {
-        for (let i = css.length - 1; i >= 0; i--) {
-          if (css[i].startsWith("entry")) css.splice(i, 1);
-        }
-      }
-    },
-  },
+  hooks: {},
 
   experimental: {
     extractCSS: true,
