@@ -36,5 +36,8 @@
     "sass": "^1.68.0",
     "sass-loader": "^13.3.2",
     "vite-plugin-compression": "^0.5.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
